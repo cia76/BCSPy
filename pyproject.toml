@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BCSPy"
+version = "2025.12.01"
+description = "Библиотека-обертка, которая позволяет работать с БКС торговое API брокера БКС из Python"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+  {name = "Чечет Игорь Александрович"}
+]
+classifiers = [
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "Topic :: Office/Business :: Financial :: Investment"
+]
+dependencies = [
+  "keyring>=25.7.0",
+  "requests",
+  "urllib3",
+  "websockets"
+]
+
+[project.urls]
+Homepage = "https://github.com/cia76/BCSPy"
+Repository = "https://github.com/cia76/BCSPy"
+
+[tool.setuptools]
+packages = ["BCSPy"]
